@@ -1,0 +1,36 @@
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+.hero {
+    position: relative;
+    top: -80px;
+    background-image: url('../../images/hero-bg@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscribe__content {
+    position: absolute;
+    width: 613px;
+    height: 481px;
+    top: -130px;
+    right: 0;
+    background-image: url('../../images/events@2x.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // background-position: right;
+}
+
+.subscribe {
+    background-image: url('../../images/events-bg@2x.png');
+    background-size: 100%;
+    background-position: center;
+}
+}
+

@@ -1,0 +1,112 @@
+.contact__inner {
+    padding-bottom: 247px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact__content {
+    padding: 62px 0 55px 166px;
+    width: 100%;
+    max-width: 982px;
+    background-color: #333333;
+    background-image: url('../../images/contact-bg.png');
+    
+}
+
+.contact__wrap {
+    width: 100%;
+    max-width: 360px;
+}
+
+.contact__title {
+    margin: 0;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.contact__desc {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.contact__form {
+    margin-top: 29px;
+}
+
+.contact__input {
+    padding: 15px 0 15px 22px;
+    margin-bottom: 14px;
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    background: #FFFFFF;
+    border: 2px solid transparent;
+    border-radius: 0px;
+    outline: none;
+}
+
+.contact__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #949494;
+}
+
+.contact__input:focus {
+    background: #FFFFFF;
+    border: 2px solid #FFBD54;
+    border-radius: 5px;
+}
+
+
+.contact__area {
+    padding: 17px 0 0 22px;
+    width: 100%;
+    max-width: 375px;
+    outline: none;
+    resize: none;
+    border: 2px solid transparent;
+    background: #FFFFFF;
+    border-radius: 0px;
+}
+
+.contact__area::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #949494;
+}
+
+.contact__area:focus {
+    background: #FFFFFF;
+    border: 2px solid #FFBD54;
+    border-radius: 5px;
+}
+
+.contact__button {
+    padding: 15px 50px;
+    margin-top: 30px;
+    border: none;
+    display: block;
+    width: 100%;
+    max-width: 266px;
+    background: #FFBD54;
+    border-radius: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    transition: all .4s ease;
+
+    
+}
