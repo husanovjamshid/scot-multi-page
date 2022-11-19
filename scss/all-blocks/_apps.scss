@@ -1,6 +1,33 @@
 .apps {
-    padding: 82px 0;
+    padding: 102px 0;
     background: #495567;
+    overflow: hidden;
+    position: relative;
+}
+
+.apps__wrap {
+    position: absolute;
+    bottom: -160px;
+    left: 450px;
+}
+
+.apps__circle {
+    display: block;
+    width: 347px;
+    height: 347px;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    border: 15px solid #E5ECF4;
+    border-radius: 50%;
+}
+
+.apps__circle + .apps__circle {
+    margin-left: 56px;
+}
+
+.apps__circle-three {
+    background-color: #E5ECF4;
+    opacity: .1;
 }
 
 .apps__text {
@@ -18,7 +45,3 @@
     color: #FFFFFF;
 }
 
-// .apps {
-//     display: block;
-//     margin-left: auto;
-// }
