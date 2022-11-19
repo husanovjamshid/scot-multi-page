@@ -1,4 +1,5 @@
 .nav__link {
+    padding: 14px 39px;
     font-family: 'Space Mono';
     font-style: normal;
     font-weight: 700;
@@ -15,4 +16,14 @@
     font-size: 15px;
     line-height: 25px;
     color: #939CAA;
+}
+
+@include media(768px) {
+    .nav-item + .nav-item {
+        margin-left: 28px;
+    }
+
+    .nav__link {
+        padding: 12px 37px;
+    }
 }

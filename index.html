@@ -11,45 +11,82 @@
 <body>
   
   <header class="site-header ">
-    <nav class="navbar navbar-expand-lg p-3">
-      <div class="container">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg p-3 d-md-flex justify-content-md-between align-content-md-center"> 
         <a class="navbar-brand" href="#"><img src="./images/logo-header.svg" width="107" height="28" alt="site  logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link " href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Location</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
-            </li>
-          </ul>
-          <button class="btn btn-warning nav__link" type="button">Get Scootin</button>
-        </div>
+        
+        <ul class="navbar-nav flex-row me-auto ms-lg-5 ms-md-5">
+          <li class="nav-item">
+            <a class="nav-link " href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Location</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+        </ul>
+        <button class="btn btn-warning nav__link" type="button">Get Scootin</button>
+      </nav>
+      
+      <div class="ovals position-absolute ">
+        <img class="oval__img" src="./images/oval.svg" alt="oval">
+        <img class="oval__img" src="./images/oval.svg" alt="oval">
+        <img class="oval__img" src="./images/oval-white.svg" alt="oval">
       </div>
-    </nav>
+    </div>
   </header>
   
   <main class="hero">
     <section class="hero__inner">
       <div class="container">
-        <div class="hero__content">
+        <div class="hero__content position-relative">
           <div class="hero__intro">
             <h1 class="hero__title">Scooter sharing made simple</h1>
           </div>
           <div class="hero__text ">
-            <p class="hero__desc ">Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!</p>
+            <p class="hero__desc desc  d-flex">
+              <span class="desc__before position-absolute"><img src="./images/header-yellow-line.svg" alt=""></span>
+              Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
+              <span class="desc__after position-absolute"><img src="./images/header-strelka.svg" alt=""></span>
+            </p>
+            <a class="btn btn-warning hero__link" href="#">Get Scootin</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div class="row g-5">
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="services__img"><img  src="./images/service-1.svg" alt="service img"></div>
+              <h3 class="services__title" >Locate with app</h3>
+              <p class="services__desc">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="services__img"><img  src="./images/service-2.svg" alt="service img"></div>
+              <h3 class="services__title" >Pick your scooter</h3>
+              <p class="services__desc">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost. </p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <div class="services__img"><img  src="./images/service-3.svg" alt="service img"></div>
+              <h3 class="services__title" >Enjoy the ride</h3>
+              <p class="services__desc">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps. </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  </main>
 
+    <section class=""></section>
+  </main>
+  
   <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
