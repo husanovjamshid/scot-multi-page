@@ -524,32 +524,9 @@ img {
 }
 
 .news {
+  padding: 150px 0 200px;
   overflow: hidden;
   position: relative;
-}
-.news::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 445px;
-  top: 0;
-  right: 0;
-  z-index: 99;
-  position: absolute;
-  background-image: url("../../images/service-right-bg.png");
-  background-repeat: no-repeat;
-}
-.news::before {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 445px;
-  top: 50%;
-  left: -10px;
-  z-index: 99;
-  position: absolute;
-  background-image: url("../../images/service-left-bg.png");
-  background-repeat: no-repeat;
 }
 
 .news__title {
@@ -561,6 +538,44 @@ img {
   line-height: 48px;
   letter-spacing: -2.14286px;
   color: #495567;
+}
+
+.top__row::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 445px;
+  top: 7%;
+  right: 0;
+  z-index: 99;
+  position: absolute;
+  background-image: url("../../images/service-right-bg.png");
+  background-repeat: no-repeat;
+}
+
+.center__row::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 445px;
+  left: -10px;
+  z-index: 99;
+  position: absolute;
+  background-image: url("../../images/service-left-bg.png");
+  background-repeat: no-repeat;
+}
+
+.bottom__row::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 445px;
+  top: 65%;
+  right: 0;
+  z-index: 99;
+  position: absolute;
+  background-image: url("../../images/service-right-bg.png");
+  background-repeat: no-repeat;
 }
 
 .news__desc {
@@ -584,13 +599,48 @@ img {
 }
 
 .news__img-arrow {
-  top: 70%;
+  top: 60%;
   right: -100px;
   z-index: 9999;
 }
 
 .news__img-left {
-  top: 8%;
+  top: 0;
   right: 55%;
   z-index: 9999;
+}
+
+.news__img-right {
+  top: 15%;
+  left: 55%;
+  z-index: 9999;
+}
+
+.apps {
+  padding: 82px 0;
+  background: #495567;
+}
+
+.apps__text {
+  width: 100%;
+  max-width: 415px;
+}
+
+.apps__title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+}
+
+.site-footer {
+  padding: 32px 0;
+  background: #333A44;
+}
+
+.site-footer__icon + .site-footer__icon {
+  margin-left: 24px;
 }/*# sourceMappingURL=main.css.map */
