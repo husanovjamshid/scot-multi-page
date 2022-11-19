@@ -1,8 +1,12 @@
 .site-footer {
+    z-index: 999;
     padding: 32px 0;
     background: #333A44;
 }
 
 .site-footer__icon + .site-footer__icon {
+    margin-left: 24px;
+}
+.nav-item + .nav-item {
     margin-left: 24px;
 }
