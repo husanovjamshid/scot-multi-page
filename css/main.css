@@ -365,6 +365,7 @@ img {
 }
 
 .nav__link {
+  padding: 14px 39px;
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
@@ -383,11 +384,37 @@ img {
   color: #939CAA;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-item + .nav-item {
+    margin-left: 28px;
+  }
+  .nav__link {
+    padding: 12px 37px;
+  }
+}
 .hero__inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 170px 0;
   background-image: url("../../images/header-bg.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.ovals {
+  z-index: 99;
+  right: 0;
+  bottom: 60px;
+  position: relative;
+}
+
+.oval__img + .oval__img {
+  margin-left: 24px;
+}
+
+.hero__content {
+  position: relative;
 }
 
 .hero__intro {
@@ -395,12 +422,14 @@ img {
   max-width: 500px;
 }
 
-.hero__desc {
+.hero__text {
   width: 100%;
   max-width: 405px;
+  margin-left: 125px;
 }
 
 .hero__title {
+  margin: 0;
   font-family: "Space Mono";
   font-style: normal;
   font-weight: 700;
@@ -411,10 +440,68 @@ img {
 }
 
 .hero__desc {
+  margin: 40px 0;
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
+}
+
+.desc__before {
+  left: -110px;
+  top: 53%;
+}
+
+.desc__after {
+  left: 50%;
+  top: 55%;
+}
+
+.hero__link {
+  padding: 14px 39px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.services__inner {
+  padding: 160px 0 147px;
+}
+
+.services__img {
+  width: 96px;
+  height: 96px;
+  padding: 24px 24px;
+  background: #FCB72B;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__title {
+  margin: 40px 0 27px;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.services__desc {
+  margin: 0;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
 }/*# sourceMappingURL=main.css.map */
