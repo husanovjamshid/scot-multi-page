@@ -10,3 +10,26 @@
 .nav-item + .nav-item {
     margin-left: 24px;
 }
+
+.site-footer__icons {
+    justify-content: end;
+}
+
+@include media(576px) {
+    .site-footer__icons {
+        display: block;
+        margin: 0 auto;
+        margin-top: 41px;
+        justify-content: center;
+    }
+    
+    .site-footer__navs {
+        flex-direction: column;
+    }
+    
+    .site-footer__nav {
+        margin: 0 auto;
+        margin-top: 41px;
+        display: block;
+    }
+}
