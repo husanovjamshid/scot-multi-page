@@ -1033,6 +1033,12 @@ img {
   color: #495567;
 }
 
+@media only screen and (max-width: 768px) {
+  .faq__text {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+}
 .accordion-wrap {
   background: #F2F5F9;
 }
