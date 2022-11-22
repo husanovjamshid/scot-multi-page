@@ -45,3 +45,40 @@
     color: #FFFFFF;
 }
 
+@include media(768px) {
+    .apps__text {
+        margin: 0 auto;
+    }
+    
+    .app {
+        margin: 0 auto;
+        margin-top: 40px; 
+    }
+    
+    .apps__title {
+        text-align: center;
+    }
+    
+    
+    .apps__wrap {
+        position: absolute;
+        bottom: -160px;
+        left: -100px;
+    }
+}
+
+@include media(576px) {
+    .apps__title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    
+}
+
+@include media(392px) {
+    .app__img {
+        width: 113px;
+        height: 40px;
+    }
+}

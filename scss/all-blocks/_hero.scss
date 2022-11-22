@@ -1,5 +1,3 @@
-
-
 .hero__inner {
     width: 100%;
     max-width: 1440px;
@@ -8,8 +6,6 @@
     background-image: url("../../images/header-bg.jpg");
     background-size: cover;
     background-position: center;
-    // position: relative;
-    
 }
 
 .ovals {
@@ -17,7 +13,6 @@
     right: 0;
     bottom: 60px;
     position: relative;
-    
 }
 
 .oval__img + .oval__img {
@@ -80,4 +75,63 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@include media(768px) {
+    .hero__inner {
+        background-image: url("../../images/hero-bg-tablet.jpg");
+    }
+
+    .desc__after {
+        left: calc(-25%);
+        top: calc(95%);
+    }
+
+    .hero__link {
+        width: 100%;
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ovals {
+        z-index: 99;
+        right: 0;
+        bottom: calc(-25%);
+        position: relative;
+    }
+}
+
+@include media(576px) {
+    .hero__inner {
+        background-image: url("../../images/hero-bg-mobile.jpg");
+    }
+
+    .hero__text {
+        margin-left: 0;
+    }
+
+    .desc__after {
+        left: calc(-60%);
+        top: calc(95%);
+    }
+
+}
+
+@include media(515px) {
+    .desc__after {
+        left: calc(-70%);
+    }
+}
+
+@include media(444px) {
+    .desc__after {
+        left: calc(-80%);
+    }
+}
+
+@include media(388px) {
+    .desc__after {
+        left: calc(-100%);
+    }
 }
