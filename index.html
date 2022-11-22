@@ -12,13 +12,14 @@
   
   <header class="site-header ">
     <div class="container">
-      <nav class="navbar navbar-expand-lg p-3 d-md-flex justify-content-md-between align-content-md-center"> 
+      <nav class="navbar navbar-expand-lg p-3 d-md-flex justify-content-md-between align-content-md-center">
+        <a class="menu__burger" href="#"><img src="./images/menu-burger.svg" alt=""></a> 
         <a class="navbar-brand" href="#"><img src="./images/logo-header.svg" width="107" height="28" alt="site  logo"></a>
         <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
-        <ul class="navbar-nav flex-row me-auto ms-lg-5 ms-md-5">
+        <ul class="navbar-nav sitenav flex-row me-auto ms-lg-5 ms-md-5">
           <li class="nav-item">
             <a class="nav-link " href="#">About</a>
           </li>
@@ -29,14 +30,10 @@
             <a class="nav-link" href="#">Careers</a>
           </li>
         </ul>
-        <button class="btn btn-warning nav__link" type="button">Get Scootin</button>
+        <button class="btn btn-warning nav__link header__nav" type="button">Get Scootin</button>
       </nav>
       
-      <div class="ovals position-absolute ">
-        <img class="oval__img" src="./images/oval.svg" alt="oval">
-        <img class="oval__img" src="./images/oval.svg" alt="oval">
-        <img class="oval__img" src="./images/oval-white.svg" alt="oval">
-      </div>
+      
     </div>
   </header>
   
@@ -44,12 +41,12 @@
     <section class="hero__inner">
       <div class="container">
         <div class="hero__content position-relative">
-          <div class="hero__intro">
-            <h1 class="hero__title">Scooter sharing made simple</h1>
+          <div class="hero__intro mx-md-auto mx-lg-0">
+            <h1 class="hero__title text-center  text-md-center text-lg-start">Scooter sharing made simple</h1>
           </div>
           <div class="hero__text ">
             <p class="hero__desc desc  d-flex">
-              <span class="desc__before position-absolute"><img src="./images/header-yellow-line.svg" alt=""></span>
+              <span class="desc__before position-absolute d-sm-none d-md-none d-lg-block  "><img src="./images/header-yellow-line.svg" alt=""></span>
               Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of our cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
               <span class="desc__after position-absolute"><img src="./images/header-strelka.svg" alt=""></span>
             </p>
@@ -58,38 +55,49 @@
           
         </div>
       </div>
+      <div class="ovals position-absolute ">
+        <img class="oval__img" src="./images/oval.svg" alt="oval">
+        <img class="oval__img" src="./images/oval.svg" alt="oval">
+        <img class="oval__img" src="./images/oval-white.svg" alt="oval">
+      </div>
     </section>
     
     <section class="services">
       <div class="container">
         <div class="services__inner">
-          <span class="services__line"></span>
-          <div class="row g-5">
-            <div class="col-12 col-sm-6 col-md-4">
+          <span class="services__line d-none d-sm-block d-md-block d-lg-block"></span>
+          <div class="row g-5 d-flex ">
+            <div class="col-12 col-md-12 col-lg-4 services__column">
               <div class="services__img"><img  src="./images/service-1.svg" alt="service img"></div>
-              <h3 class="services__title" >Locate with app</h3>
-              <p class="services__desc">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+              <div class="services__wrap">
+                <h3 class="services__title" >Locate with app</h3>
+                <p class="services__desc">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </p>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-md-12 col-lg-4 services__column">
               <div class="services__img"><img  src="./images/service-2.svg" alt="service img"></div>
-              <h3 class="services__title" >Pick your scooter</h3>
-              <p class="services__desc">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost. </p>
+              <div class="services__wrap">
+                <h3 class="services__title" >Pick your scooter</h3>
+                <p class="services__desc">We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost. </p>
+              </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4">
+            <div class="col-12 col-md-12 col-lg-4 services__column">
               <div class="services__img"><img  src="./images/service-3.svg" alt="service img"></div>
-              <h3 class="services__title" >Enjoy the ride</h3>
-              <p class="services__desc">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps. </p>
+              <div class="services__wrap">
+                <h3 class="services__title" >Enjoy the ride</h3>
+                <p class="services__desc">Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps. </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    
     <section class="news">
       <div class="container">
         <div class="new__inner">
           <div class="row g-5 d-flex align-items-center justify-content-between mb-5 top__row">
-            <div class="col-12 col-sm-12 col-md-6">
+            <div class="col-12 col-sm-12 col-md-6 top__col">
               <h3 class="news__title">Easy to use
                 riding telemetry</h3>
               <p class="news__desc">The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
@@ -101,9 +109,9 @@
             </div>
           </div>
 
-          <div class="row flex-row-reverse g-5 d-flex align-items-center justify-content-between mt-5 mb-5 center__row">
-            <div class="col-12 col-sm-12 col-md-6">
-              <h3 class="news__title">Coming to a city near you</h3>
+          <div class="row center__row  g-5 d-flex align-items-center justify-content-between mt-5 mb-5 ">
+            <div class="col-12 col-sm-12 col-md-6 center__col">
+              <h3 class="news__title ">Coming to a city near you</h3>
               <p class="news__desc">Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
               <a class="btn btn-warning hero__link" href="#">Learn More</a>
             </div>
@@ -114,7 +122,7 @@
           </div>
 
           <div class="row g-5 d-flex align-items-center justify-content-between mt-5 bottom__row">
-            <div class="col-12 col-sm-12 col-md-6">
+            <div class="col-12 col-sm-12 col-md-6 bottom__col">
               <h3 class="news__title">Zero hassle payments</h3>
               <p class="news__desc">Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
               <a class="btn btn-warning hero__link" href="#">Learn More</a>
@@ -126,60 +134,61 @@
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="apps">
+    </section>    
+      
+      <section class="apps">
+        <div class="container">
+          <div class="apps__wrap d-flex ">
+            <span class="apps__circle"></span>
+            <span class="apps__circle apps__circle-two"></span>
+            <span class="apps__circle apps__circle-three"></span>
+          </div>
+          <div class="row d-flex align-items-center justify-content-between apps__row">
+            <div class="col-12 col-md-12 col-lg-6">
+              <div class="apps__text">
+                <p class="apps__title">Sign up and Scoot off today</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-end">
+              <div class="app">
+                <img class="app__img" src="./images/apple.png"  alt="apple">
+                <img class="ms-3 app__img" src="./images/google.png" alt="google">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+    </main>
+    
+    <footer class="site-footer">
       <div class="container">
-        <div class="apps__wrap d-flex ">
-          <span class="apps__circle"></span>
-          <span class="apps__circle apps__circle-two"></span>
-          <span class="apps__circle apps__circle-three"></span>
+        <div class="row">
+          <div class="col-12 col-sm-8 col-md-8 d-flex align-items-center">
+            <img src="./images/logo.svg" alt="footer logo">
+            <ul class="navbar-nav flex-row me-auto ms-sm-3 ms-lg-5 ms-md-5">
+              <li class="nav-item">
+                <a class="nav-link " href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="col-12 col-sm-4 col-md-4 d-flex align-items-center justify-content-end ">
+            <a class="site-footer__icon"  href="#"><img src="./images/facebook.svg" alt="facebook"></a>
+            <a class="site-footer__icon"  href="#"><img src="./images/twitter.svg" alt="twitter"></a>
+            <a class="site-footer__icon"  href="#"><img src="./images/instagram.svg" alt="instagram"></a>
+          </div>
         </div>
-        <div class="row d-flex align-items-center justify-content-between">
-          <div class="col-12 col-sm-6 col-md-6">
-            <div class="apps__text">
-              <strong class="apps__title">Sign up and Scoot off today</strong>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-6 d-flex justify-content-end">
-            <div class="app">
-              <img src="./images/apple.png" alt="apple">
-              <img class="ms-3" src="./images/google.png" alt="google">
-            </div>
-          </div>
-        </div>  
       </div>
-    </section>
-  </main>
+    </footer>
+    
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+  </body>
+  </html>
   
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 d-flex align-items-center">
-          <img src="./images/logo.svg" alt="footer logo">
-          <ul class="navbar-nav flex-row me-auto ms-lg-5 ms-md-5">
-            <li class="nav-item">
-              <a class="nav-link " href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Location</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-md-6 d-flex align-items-center justify-content-end ">
-          <a class="site-footer__icon"  href="#"><img src="./images/facebook.svg" alt="facebook"></a>
-          <a class="site-footer__icon"  href="#"><img src="./images/twitter.svg" alt="twitter"></a>
-          <a class="site-footer__icon"  href="#"><img src="./images/instagram.svg" alt="instagram"></a>
-        </div>
-      </div>
-    </div>
-  </footer>
- 
-  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
-</body>
-</html>

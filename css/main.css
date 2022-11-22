@@ -384,12 +384,39 @@ img {
   color: #939CAA;
 }
 
+.menu__burger {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-item + .nav-item {
     margin-left: 28px;
   }
   .nav__link {
     padding: 12px 37px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sitenav {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .navbar-brand {
+    margin: 0 auto;
+  }
+  .menu__burger {
+    display: block;
+  }
+  .ovals {
+    display: none;
+  }
+  .desc__before {
+    display: none;
+  }
+  .hero__desc {
+    text-align: center;
   }
 }
 .hero__inner {
@@ -470,6 +497,54 @@ img {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .hero__inner {
+    background-image: url("../../images/hero-bg-tablet.jpg");
+  }
+  .desc__after {
+    left: -25%;
+    top: 95%;
+  }
+  .hero__link {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  .ovals {
+    z-index: 99;
+    right: 0;
+    bottom: -25%;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero__inner {
+    background-image: url("../../images/hero-bg-mobile.jpg");
+  }
+  .hero__text {
+    margin-left: 0;
+  }
+  .desc__after {
+    left: -60%;
+    top: 95%;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .desc__after {
+    left: -70%;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .desc__after {
+    left: -80%;
+  }
+}
+@media only screen and (max-width: 388px) {
+  .desc__after {
+    left: -100%;
+  }
+}
 .services {
   position: relative;
 }
@@ -523,6 +598,50 @@ img {
   z-index: -1;
 }
 
+@media only screen and (max-width: 768px) {
+  .services__wrap {
+    width: 100%;
+    max-width: 398px;
+  }
+  .services__column {
+    width: 100%;
+    max-width: 573px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .services__column + .services__column {
+    margin-top: 40px;
+  }
+  .services {
+    position: relative;
+  }
+  .services__line {
+    max-width: 1px;
+    height: 513px;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    border: 15px solid #E5ECF4;
+    z-index: -1;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .services__column {
+    width: 100%;
+    text-align: center;
+    max-width: 311px;
+    margin: 0 auto;
+    display: block;
+  }
+  .services__img {
+    margin: 0 auto;
+  }
+  .services__column + .services__column {
+    margin-top: 50px;
+  }
+}
 .news {
   padding: 150px 0 200px;
   overflow: hidden;
@@ -553,6 +672,9 @@ img {
   background-repeat: no-repeat;
 }
 
+.center__row {
+  flex-direction: row-reverse;
+}
 .center__row::before {
   content: "";
   display: block;
@@ -616,6 +738,66 @@ img {
   z-index: 9999;
 }
 
+@media only screen and (max-width: 768px) {
+  .top__row {
+    flex-direction: column-reverse;
+  }
+  .center__row {
+    flex-direction: column-reverse;
+  }
+  .bottom__row {
+    flex-direction: column-reverse;
+  }
+  .top__col {
+    width: 100%;
+    max-width: 573px;
+  }
+  .center__col {
+    width: 100%;
+    max-width: 573px;
+  }
+  .bottom__col {
+    width: 100%;
+    max-width: 573px;
+  }
+  .news__title {
+    text-align: center;
+  }
+  .news__desc {
+    text-align: center;
+  }
+  .news__img-arrow {
+    top: 60%;
+    right: 0px;
+    z-index: 9999;
+  }
+  .news__img {
+    border-radius: 50%;
+    display: block;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .top__row::after {
+    display: none;
+  }
+  .center__row::before {
+    display: none;
+  }
+  .bottom__row::after {
+    display: none;
+  }
+  .news__img {
+    background-size: 100%;
+    width: 311px;
+    height: 311px;
+    margin: 0 auto;
+  }
+  .news__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
 .apps {
   padding: 102px 0;
   background: #495567;
@@ -663,6 +845,35 @@ img {
   color: #FFFFFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .apps__text {
+    margin: 0 auto;
+  }
+  .app {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .apps__title {
+    text-align: center;
+  }
+  .apps__wrap {
+    position: absolute;
+    bottom: -160px;
+    left: -100px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .apps__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 392px) {
+  .app__img {
+    width: 113px;
+    height: 40px;
+  }
+}
 .site-footer {
   z-index: 999;
   padding: 32px 0;

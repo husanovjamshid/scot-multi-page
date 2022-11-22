@@ -18,6 +18,10 @@
     color: #939CAA;
 }
 
+.menu__burger {
+    display: none;
+}
+
 @include media(768px) {
     .nav-item + .nav-item {
         margin-left: 28px;
@@ -26,4 +30,36 @@
     .nav__link {
         padding: 12px 37px;
     }
+}
+
+@include media(576px) {
+    .sitenav {
+        display: none;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .navbar-brand {
+        margin: 0 auto;
+    }
+
+    .menu__burger {
+        display: block;
+    }
+
+    .ovals {
+        display: none;
+    }
+
+    .desc__before {
+        display: none;
+    }
+
+    .hero__desc {
+        text-align: center;
+    }
+
+  
 }
