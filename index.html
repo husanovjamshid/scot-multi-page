@@ -14,14 +14,14 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg p-3 d-md-flex justify-content-md-between align-content-md-center">
         <a class="menu__burger" href="#"><img src="./images/menu-burger.svg" alt=""></a> 
-        <a class="navbar-brand" href="#"><img src="./images/logo-header.svg" width="107" height="28" alt="site  logo"></a>
+        <a class="navbar-brand" href="index.html"><img src="./images/logo-header.svg" width="107" height="28" alt="site  logo"></a>
         <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
         <ul class="navbar-nav sitenav flex-row me-auto ms-lg-5 ms-md-5">
           <li class="nav-item">
-            <a class="nav-link " href="#">About</a>
+            <a class="nav-link " href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Location</a>
@@ -104,7 +104,7 @@
               <a class="btn btn-warning hero__link" href="#">Learn More</a>
             </div>
             <div class="col-12 col-sm-12 col-md-6 position-relative">
-              <img src="./images/human-1.jpg" class="img-fluid news__img" alt="">
+              <img src="./images/human-1.jpg" srcset="./images/human-1.jpg 1x , ./images/human-1@2x.jpg 2x" class="img-fluid news__img" alt="">
               <img src="./images/service-strelka.svg" class="img-fluid position-absolute news__img-arrow" alt="">
             </div>
           </div>
@@ -116,7 +116,7 @@
               <a class="btn btn-warning hero__link" href="#">Learn More</a>
             </div>
             <div class="col-12 col-sm-12 col-md-6 position-relative">
-              <img src="./images/human-2.jpg" class="img-fluid news__img news__img-two" alt="">
+              <img src="./images/human-2.jpg" srcset="./images/human-2.jpg 1x , ./images/human-2@2x.jpg 2x" class="img-fluid news__img" alt="">
               <img src="./images/service-strelka-short-1.svg" class="img-fluid position-absolute news__img-left" alt="">
             </div>
           </div>
@@ -128,7 +128,7 @@
               <a class="btn btn-warning hero__link" href="#">Learn More</a>
             </div>
             <div class="col-12 col-sm-12 col-md-6 position-relative">
-              <img src="./images/human-3.jpg" class="img-fluid news__img" alt="">
+              <img src="./images/human-3.jpg" srcset="./images/human-3.jpg 1x , ./images/human-3@2x.jpg 2x" class="img-fluid news__img" alt="">
               <img src="./images/service-strelka-short-2.svg" class="img-fluid position-absolute news__img-right" alt="">
             </div>
           </div>
@@ -164,10 +164,10 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-8 col-md-8 d-flex align-items-center site-footer__navs">
-            <img src="./images/logo.svg" alt="footer logo">
+            <a href="index.html"><img src="./images/logo.svg" alt="footer logo"></a>
             <ul class="navbar-nav flex-row me-auto ms-sm-3 ms-lg-5 ms-md-5 site-footer__nav">
               <li class="nav-item">
-                <a class="nav-link " href="#">About</a>
+                <a class="nav-link " href="about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Location</a>
@@ -187,7 +187,6 @@
       </div>
     </footer>
     
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
   </body>
   </html>
